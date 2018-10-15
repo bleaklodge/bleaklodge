@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<addon id="repository.bleaklodge" name="bleaklodge repo" version="1.0" provider-name="bleaklodge">
+    <extension point="xbmc.addon.repository" name="bleaklodge repo">
+    <dir>
+        <info compressed="false">https://github.com/bleaklodge/bleaklodge/raw/master/addons.xml</info>
+        <checksum>https://github.com/bleaklodge/bleaklodge/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/bleaklodge/bleaklodge/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/I-A-C/ExodusReduxRepo/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/I-A-C/ExodusReduxRepo/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/I-A-C/ExodusReduxRepo/master/zips/</datadir>
+    </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Testing and Learning stuff</summary>
+        <description>bleaklodge repo</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.theoath" name="TheOath" provider-name="theoath" version="1.0.0c">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0" />
+		<import addon="script.theoath.artwork" version="1.0.0" />
+		<import addon="script.theoath.metadata" version="1.0.0" />
+		<import addon="script.module.resolveurl" version="5.0.00" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.lambdascrapers" optional="true" />
+		<import addon="script.module.orion" optional="true" />
+	</requires>
+	<extension library="theoath.py" point="xbmc.python.pluginsource">
+		<provides>video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en_GB">TheOath</summary>
+		<description lang="en_GB">This add-on does not form part of the Kodi Media Centre. Please do not seek assistance with this add-on from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum />
+		<website />
+		<source />
+		<disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+				<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+				<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+				<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+		</assets>
+		<news>
+		</news>
+	</extension>
+</addon>
+
+<addon id="script.theoath.artwork" version="1.0.0" name="TheOath Artwork" provider-name="theoath">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the TheOath Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.theoath.metadata" version="1.0.0" name="TheOath Metadata" provider-name="theoath">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the TheOath Addon</summary>
+		<description>Metadata for TheOath are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.metahandler" 
+     name="metahandler" 
+     version="4.0.0" 
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+</addons>
