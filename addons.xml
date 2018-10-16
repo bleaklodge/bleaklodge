@@ -26,16 +26,16 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.theoath" name="TheOath" provider-name="theoath" version="1.0.3">
+<addon id="plugin.video.theoath" name="TheOath" provider-name="theoath" version="1.0.4">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0" />
-		<import addon="script.theoath.artwork" version="1.0.0" />
-		<import addon="script.theoath.metadata" version="1.0.0" />
-		<import addon="script.module.resolveurl" version="5.0.00" />
+		<import addon="script.theoath.artwork" />
+		<import addon="script.theoath.metadata" />
+		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.metahandler" />
 		<import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.lambdascrapers" optional="true" />
+		<import addon="script.module.lambdascrapers" />
 		<import addon="script.module.orion" optional="true" />
 	</requires>
 	<extension library="theoath.py" point="xbmc.python.pluginsource">
