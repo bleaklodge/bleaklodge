@@ -64,7 +64,7 @@
 	</extension>
 </addon>
 
-<addon id="script.theoath.artwork" version="1.0.1" name="TheOath Artwork" provider-name="theoath">
+<addon id="script.theoath.artwork" version="1.0.2" name="TheOath Artwork" provider-name="theoath">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -76,7 +76,7 @@
 	</extension>
 </addon>
 
-<addon id="script.theoath.metadata" version="1.0.0" name="TheOath Metadata" provider-name="theoath">
+<addon id="script.theoath.metadata" version="1.0.1" name="TheOath Metadata" provider-name="theoath">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
