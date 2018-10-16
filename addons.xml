@@ -26,7 +26,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.theoath" name="TheOath" provider-name="theoath" version="1.0.6">
+<addon id="plugin.video.theoath" name="TheOath" provider-name="theoath" version="1.0.7">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0" />
 		<import addon="script.theoath.artwork" />
